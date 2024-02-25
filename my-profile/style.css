@@ -1,8 +1,18 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* police principale */
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+}
+
+/* Police de secours */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+    }
 }
 
 .container {
@@ -39,9 +49,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif;
+    font-family: 'Lora', serif; /* police principale */
     font-weight: bold;
     color: #333;
+}
+
+/* Police de secours */
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v22/0QIvMX1D_JOuMwf7I_FMl_E.woff2) format('woff2');
 }
 
 ul.list-inline {
